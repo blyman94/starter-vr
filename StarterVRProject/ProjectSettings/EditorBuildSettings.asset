@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/VR Starter Scene.unity
+    guid: 34de93e361aceb843a5fdd402fc5cb8c
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c9c071b6ac89fd743b45ed3a68ff8852,
       type: 2}
