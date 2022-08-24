@@ -13,12 +13,27 @@ public class PlaySoundsFromList : MonoBehaviour
     [Tooltip("The list of audio clips to play from")]
     public List<AudioClip> audioClips = new List<AudioClip>();
 
+    public float minTimeBetweenSounds = 3.0f;
+    public float maxTimeBetweenSounds = 10.0f;
+
     private AudioSource audioSource = null;
     private int index = 0;
+
+    private float soundTimer;
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+    }
+
+    private void Update()
+    {
+        soundTimer -= Time.deltaTime;
+        if (soundTimer <= 0)
+        {
+            RandomClip();
+            soundTimer = Random.Range(minTimeBetweenSounds, maxTimeBetweenSounds);
+        }
     }
 
     public void NextClip()
