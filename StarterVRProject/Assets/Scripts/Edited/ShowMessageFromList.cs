@@ -24,6 +24,15 @@ public class ShowMessageFromList : MonoBehaviour
         ShowMessage();
     }
 
+    public void FirstMessage()
+    {
+        if (messages.Count > 0)
+        {
+            index = 0;
+            ShowMessage();
+        }
+    }
+
     public void NextMessage()
     {
         int newIndex = ++index % messages.Count;
