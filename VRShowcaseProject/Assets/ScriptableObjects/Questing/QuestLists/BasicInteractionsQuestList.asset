@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84187b518b4368142b60fa7bbac27022, type: 3}
+  m_Name: BasicInteractionsQuestList
+  m_EditorClassIdentifier: 
+  CurrentQuests:
+  - {fileID: 11400000, guid: bd4ab89bf05a5754488d48ce1f1b67d1, type: 2}
+  - {fileID: 11400000, guid: 9813e28740023b34b955309c6b7e3eb0, type: 2}
+  - {fileID: 11400000, guid: be32d821f60538c4fbd1f7bafe491b83, type: 2}
